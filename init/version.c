@@ -39,7 +39,7 @@ EXPORT_SYMBOL_GPL(init_uts_ns);
 
 /* FIXED STRINGS! Don't touch! */
 const char linux_banner[] =
-	"ExtendedKitKatKernel Version 0.1\nLinux version " UTS_RELEASE " (" LINUX_COMPILE_BY "@"
+	"ExtendedKitKatKernel Version 0.1(alpha)\nLinux version " UTS_RELEASE " (" LINUX_COMPILE_BY "@"
 	LINUX_COMPILE_HOST ") (" LINUX_COMPILER ") " UTS_VERSION "\n";
 
 const char linux_proc_banner[] =
