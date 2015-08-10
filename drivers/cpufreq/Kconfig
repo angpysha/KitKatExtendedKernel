@@ -88,6 +88,12 @@ config CPU_FREQ_DEFAULT_GOV_ONDEMAND
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
 
+config CPU_FREQ_DEFAULT_GOV_PEGASUSQ
+	bool "pegasusq"
+	select CPU_FREQ_GOV_PEGASUSQ
+	help
+	  Use the CPUFreq governor 'pegasusq' as default.
+
 config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	bool "conservative"
 	select CPU_FREQ_GOV_CONSERVATIVE
@@ -120,6 +126,12 @@ config CPU_FREQ_GOV_PERFORMANCE
 	  To compile this driver as a module, choose M here: the
 	  module will be called cpufreq_performance.
 
+	  If in doubt, say Y.
+
+config CPU_FREQ_GOV_PEGASUSQ
+	tristate "'pegasusq' governor"
+	help
+	  The Pegasus-q / d is a multi-core based on the Ondemand governor and governor with integrated hot-plugging.
 	  If in doubt, say Y.
 
 config CPU_FREQ_GOV_POWERSAVE
