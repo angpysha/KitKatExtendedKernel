@@ -1,4 +1,5 @@
 deps_config := \
+	arch/arm/hotplug/Kconfig \
 	lib/xz/Kconfig \
 	lib/Kconfig \
 	drivers/crypto/caam/Kconfig \

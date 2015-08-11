@@ -206,6 +206,7 @@ machine-$(CONFIG_MACH_SPEAR310)		:= spear3xx
 machine-$(CONFIG_MACH_SPEAR320)		:= spear3xx
 machine-$(CONFIG_MACH_SPEAR600)		:= spear6xx
 machine-$(CONFIG_ARCH_ZYNQ)		:= zynq
+core-$(CONFIG_INTELLI_PLUG)	+= arch/arm/hotplug/
 
 # Platform directory name.  This list is sorted alphanumerically
 # by CONFIG_* macro name.

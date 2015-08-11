@@ -41,6 +41,12 @@ config ARCH_MSM7X27
 	select MIGHT_HAVE_CACHE_L2X0
 	select MSM_MODEM_RESTART
 
+config CPU_UNDERCLOCK
+	bool "enable CPU underclocking of Cortex A7"
+	default y
+	help
+	  Simple CPU Underclocking Option to 150 MHz
+
 config ARCH_MSM7X30
 	bool "MSM7x30"
 	select ARCH_MSM_SCORPION
