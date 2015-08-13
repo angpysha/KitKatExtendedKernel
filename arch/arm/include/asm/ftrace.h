@@ -49,6 +49,7 @@ static inline void *return_address(unsigned int level)
 {
 	return NULL;
 }
+//extern inline void *return_address(unsigned int level);
 
 #endif
 

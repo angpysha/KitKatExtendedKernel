@@ -210,8 +210,8 @@ static void cpufreq_impulse_timer_start(int cpu)
 	}
 
 	pcpu->time_in_idle =
-		get_cpu_idle_time(cpu, &pcpu->time_in_idle_timestamp,
-				  io_is_busy);
+		get_cpu_idle_time((unsigned int)cpu, (u64 *)&pcpu->time_in_idle_timestamp,
+				  (int)io_is_busy);
 	pcpu->cputime_speedadj = 0;
 	pcpu->cputime_speedadj_timestamp = pcpu->time_in_idle_timestamp;
 	spin_unlock_irqrestore(&pcpu->load_lock, flags);
