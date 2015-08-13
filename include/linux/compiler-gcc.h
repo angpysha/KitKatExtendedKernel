@@ -60,6 +60,7 @@
 #define __deprecated			__attribute__((deprecated))
 #define __packed			__attribute__((packed))
 #define __weak				__attribute__((weak))
+#define _gcc_header(x) __gcc_header(linux/compiler-gcc##x.h)
 
 /*
  * it doesn't make sense on ARM (currently the only user of __naked) to trace
