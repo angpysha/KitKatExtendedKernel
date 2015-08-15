@@ -30,8 +30,9 @@
 #define KEXEC_HB_KERNEL_LOC		UL(0x3208000)
 #elif defined (CONFIG_MACH_MSM8974_G2_OPEN_COM)
 #define KEXEC_HB_PAGE_ADDR		UL(0x07b00000)
-#elif defined (CONFIG_MACH_MSM8X10_W5DS_GLOBAL_COM)
-#define KEXEC_HB_PAGE_ADDR		UL(0x07b00000)
+#elif defined (CONFIG_MACH_MSM8X10_W5DS_GLOBAL_COM) || \
+		defined		(CONFIG_MACH_MSM8X10_W5)
+#define KEXEC_HB_PAGE_ADDR		UL(0x09700000)
 #else
 #error "Adress for kexec hardboot page not defined"
 #endif
